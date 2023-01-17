@@ -5,6 +5,7 @@ domain: livkndt.github.io
 url: https://livkndt.github.io
 baseurl: ""
 markdown: kramdown
+cdn_url: https://d19w7e3j8gkywb.cloudfront.net/
 
 twitter_username: olivzz
 github_username:  livkndt

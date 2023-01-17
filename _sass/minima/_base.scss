@@ -106,6 +106,10 @@ a {
   text-decoration: none;
   position: relative;
 
+  &.company-url {
+    color: $grey-color-dark!important;
+  }
+
   &:visited {
     color: lighten($brand-color, 10%);
   }

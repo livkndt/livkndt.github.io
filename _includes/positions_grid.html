@@ -5,18 +5,25 @@
             {%- for position in site.positions -%}
             <article>
                 <a href="{{ position.url | relative_url }}">
-                    <div class="top" style="background-image: url('{{ position.company_hero }}')"></div>
+                    <div class="top" style="background-image: url('{{ position.company_hero_alt | prepend: site.cdn_url }}')"></div>
                 </a>
                 <div class="bottom">
                     <h3><a href="{{ position.url | relative_url }}">{{ position.title | escape }}</a></h3>
                     <div class="company">
                         <h4>
                             {%- if position.company_logo -%}
-                            <img src="{{ position.company_logo }}" alt="" title="" />
+                            <img src="{{ position.company_logo | prepend: site.cdn_url }}" alt="" title="" />
                             {%- endif -%}
-                            {{ position.company }}
+                            <a class="company-url" href="{{ position.company_url }}" target="_blank">{{ position.company }}</a>
                         </h4>
-                        <small>{{ position.start | date: "%b %Y" }} - {{ position.end | date: "%b %Y" }}</small>
+                        <small>
+                            {{ position.start | date: "%b %Y" }} -&nbsp;
+                            {%- if position.end -%}
+                                {{ position.end | date: "%b %Y" }}
+                            {%- else -%}
+                                Present
+                            {%- endif -%}
+                        </small>
                     </div>
                     {% assign tech = position.tech | split: ", " %}
                     <ul class="tech">

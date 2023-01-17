@@ -7,14 +7,20 @@ layout: default
             <h1 itemprop="name headline">{{ page.title }}</h1><br>
             <h2>
                 {%- if page.company_logo -%}
-                <img class="company-logo" src="{{ page.company_logo }}" alt="" title=""/>
+                <img class="company-logo" src="{{ page.company_logo | prepend: site.cdn_url }}" alt="" title=""/>
                 {%- endif -%}
-                {{ page.company }}
+                <a class="company-url" href="{{ position.company_url }}" target="_blank">{{ page.company }}</a>
             </h2><br>
             <div class="tenure">
                 <time datetime="{{ page.start | date_to_xmlschema }}">{{ page.start | date: "%b %Y" }}</time>
                 -
-                <time datetime="{{ page.end | date_to_xmlschema }}">{{ page.end | date: "%b %Y" }}</time>
+                <time datetime="{{ page.end | date_to_xmlschema }}">
+                    {%- if page.end -%}
+                        {{ page.end | date: "%b %Y" }}
+                    {%- else -%}
+                        Present
+                    {%- endif -%}
+                </time>
             </div>
             {% assign tech = page.tech | split: ", " %}
             <div>
@@ -32,7 +38,17 @@ layout: default
     <div class="wrapper">
         <div itemprop="articleBody">
             {%- if page.company_hero -%}
-            <img src="{{ page.company_hero }}" alt="" title="" /><br/><br/>
+            <picture>
+                <source srcset="{{ page.company_hero_alt | prepend: site.cdn_url }}" type="image/webp">
+                <source srcset="{{ page.company_hero | prepend: site.cdn_url }}" type="image/jpeg">
+                <img src="{{ page.company_hero | prepend: site.cdn_url }}"
+                     alt=""
+                     title=""
+                     loading="eager"
+                     fetchpriority="high"
+                />
+            </picture>
+            <br/><br/>
             {%- endif -%}
             {{ content }}
         </div>

@@ -1,28 +1,39 @@
 ---
-title: "Head of Engineering"
-start: 2022-11-24 00:00:00 +0000
-end: 2022-11-24 00:00:00 +0000
-description: OpenSC uses cutting edge technology to track individual products from origin to consumer. The aim is to help businesses and consumers avoid illegal, environmentally damaging or unethical products, while improving supply chain accountability and transparency.
+title: Head of Engineering
+start: 2019-05-01 00:00:00 +0000
+description: "OpenSC uses cutting edge technology to verify low-carbon and sustainable food production at source. The 
+aim is to help businesses and consumers avoid illegal, environmentally damaging or unethical products, while improving 
+supply chain accountability and transparency."
 company: OpenSC
-tech: devops, spring boot, react
-company_logo: https://www.dropbox.com/s/6n24m7xxj6ky0k4/opensc_logo.png?raw=1
-company_hero: https://www.dropbox.com/s/9vf04lbpfy9b3ez/opensc_hero.png?raw=1
+company_url: https://opensc.org
+tech: aws, terraform, kubernetes, kotlin, spring boot, typescript, react
+company_logo: opensc_logo.png
+company_hero: opensc_hero.png
+company_hero_alt: opensc_hero.webp
 ---
 ## Summary
-I have been working with OpenSC since May 2019 and since then, have taken on the role of Software Engineering Lead for the Platform team.
-The Platform team is responsible for developing OpenSC's core platform that allows customers to verify, trace and share their supply chains.
-We are developing algorithms to make sustainability claims about supply chains in an automated fashion; for example using readily available GPS 
-data from fishing vessels along with a machine learning algorithm and other data to detect whether vessels are fishing in protected areas of the 
-ocean. We enable customers to trace their supply chains and the data is stored immutably on the public blockchain. All of this data can then be 
-provided to end consumers of those products to help them understand the origins and journeys of their products and make more informed, conscious 
-buying decisions.
+I was part of the initial European team in May 2019, consisting of just four software engineers (following a successful
+pilot out of Sydney, Australia). We built OpenSC's core platform from scratch. In January 2020, I took the role of 
+Lead Engineer for the Platform team. I have been operating as Head of Engineering since February 2022.
+
+OpenSC's Data Science and Engineering team is responsible for developing the core platform that allows customers to
+verify, trace and share information about their supply chains. We are developing algorithms to make sustainability 
+claims in an automated fashion. For example, we use readily available GPS data from fishing vessels with a 
+machine-learning algorithm to detect whether vessels are fishing in protected ocean zones.
+
+We also enable digital supply chain traceability for our customers. The data is stored immutably on a public blockchain 
+to provide a layer of tamper-proof auditability.
+
+This sustainability and traceability data can be made available to end consumers of supply chain products. The aim is 
+to help them learn about the origin and journey of the products they buy and help them make more informed buying decisions.
 
 ## Role & Responsibilities
-- Part of the initial team (May 2019) responsible for building OpenSC's core platform from scratch, including our public API.
+- Building OpenSC's core platform from scratch, including our public API, frontend applications and cloud infrasructure.
 - Responsible for driving the evolution of the platform and overseeing and taking architectural decisions.
 - Development across the entire stack, research spikes & architecture design.
 - Managing relationships with partners/external stakeholders.
 - Accountable for team delivery.
 - Hiring across the Platform team inc. engineering, design & product.
-- Coaching team (of 5) & promoting a good working culture.
+- Coaching team (of 7) & promoting a good working culture.
 - Evolving & improving team processes.
+- Managing security and GDPR for the company.

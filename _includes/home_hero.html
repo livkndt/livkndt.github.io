@@ -5,9 +5,9 @@
         </div>
         <div class="hero-right">
             <picture>
-                <source srcset="{{ page.hero_image_alt }}" type="image/webp">
-                <source srcset="{{ page.hero_image }}" type="image/jpeg">
-                <img src="{{ page.hero_image }}"
+                <source srcset="{{ page.hero_image_alt | prepend: site.cdn_url }}" type="image/webp">
+                <source srcset="{{ page.hero_image | prepend: site.cdn_url }}" type="image/jpeg">
+                <img src="{{ page.hero_image | prepend: site.cdn_url }}"
                      alt=""
                      title=""
                      loading="eager"

@@ -1,8 +1,8 @@
 ---
 layout: home
 title: Olivia Knoedt
-hero_image: https://d19w7e3j8gkywb.cloudfront.net/olivia-2022.jpeg
-hero_image_alt: https://d19w7e3j8gkywb.cloudfront.net/olivia-2022.webp
+hero_image: olivia-2022.jpeg
+hero_image_alt: olivia-2022.webp
 ---
 # Olivia Knoedt
 I'm Olivia, a software engineering lead currently based in London.
