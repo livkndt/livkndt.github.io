@@ -1,0 +1,57 @@
+title: Olivia Knoedt
+description: >-
+  Olivia is a software engineer from London, UK. She's currently Head of Engineering at OpenSC.
+domain: livkndt.github.io
+url: https://lvkndt.github.io
+baseurl: ""
+markdown: kramdown
+
+twitter_username: olivzz
+github_username:  livkndt
+linkedin_username: oliviaknoedt
+instagram_username: livkndt
+
+show_excerpts: true
+show_nav: false
+site_credits: >-
+  This website was built using Jekyll & is evolved from their Minima theme. 💜
+
+collections:
+  positions:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "positions"
+    values:
+      layout: "position"
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+sass:
+  style: compressed
+
+exclude:
+   - .sass-cache/
+   - .jekyll-cache/
+   - gemfiles/
+   - Gemfile
+   - Gemfile.lock
+   - node_modules/
+   - vendor/bundle/
+   - vendor/cache/
+   - vendor/gems/
+   - vendor/ruby/

@@ -1,0 +1,33 @@
+<section class="experience">
+    <div class="wrapper">
+        <h2>Experience</h2>
+        <div class="positions">
+            {%- for position in site.positions -%}
+            <article>
+                <a href="{{ position.url | relative_url }}">
+                    <div class="top" style="background-image: url('{{ position.company_hero }}')"></div>
+                </a>
+                <div class="bottom">
+                    <h3><a href="{{ position.url | relative_url }}">{{ position.title | escape }}</a></h3>
+                    <div class="company">
+                        <h4>
+                            {%- if position.company_logo -%}
+                            <img src="{{ position.company_logo }}" alt="" title="" />
+                            {%- endif -%}
+                            {{ position.company }}
+                        </h4>
+                        <small>{{ position.start | date: "%b %Y" }} - {{ position.end | date: "%b %Y" }}</small>
+                    </div>
+                    {% assign tech = position.tech | split: ", " %}
+                    <ul class="tech">
+                        {%- for t in tech -%}
+                        <li>{{ t }}</li>
+                        {%- endfor -%}
+                    </ul>
+                    <p>{{ position.description }}</p>
+                </div>
+            </article>
+            {%- endfor -%}
+        </div>
+    </div>
+</section>

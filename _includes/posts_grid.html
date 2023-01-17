@@ -1,0 +1,32 @@
+<section class="blog">
+    <div class="wrapper">
+        <h2>Posts</h2>
+        <div class="posts">
+            {%- for post in site.posts -%}
+            <article>
+                <div class="top" style="background-image: url('{{ post.image_url }}')"></div>
+                <div class="bottom">
+                    <h3>
+                        <a href="{{ post.url | relative_url }}">
+                            {{ post.title | escape }}
+                        </a>
+                    </h3>
+                    <div class="post-meta">
+                        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                        <small>{{ post.date | date: date_format }}</small>
+                    </div>
+                    <ul class="post-categories">
+                        {%- for c in post.categories -%}
+                        <li>{{ c }}</li>
+                        {%- endfor -%}
+                    </ul>
+                    {%- if site.show_excerpts -%}
+                    {{ post.excerpt }}
+                    {%- endif -%}
+                </div>
+            </article>
+            {%- endfor -%}
+        </div>
+        <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+    </div>
+</section>

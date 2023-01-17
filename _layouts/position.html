@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<article class="position">
+    <header class="position-hero">
+        <div class="wrapper">
+            <h1 itemprop="name headline">{{ page.title }}</h1><br>
+            <h2>
+                {%- if page.company_logo -%}
+                <img class="company-logo" src="{{ page.company_logo }}" alt="" title=""/>
+                {%- endif -%}
+                {{ page.company }}
+            </h2><br>
+            <div class="tenure">
+                <time datetime="{{ page.start | date_to_xmlschema }}">{{ page.start | date: "%b %Y" }}</time>
+                -
+                <time datetime="{{ page.end | date_to_xmlschema }}">{{ page.end | date: "%b %Y" }}</time>
+            </div>
+            {% assign tech = page.tech | split: ", " %}
+            <div>
+                <ul class="tech">
+                    {% for t in tech %}
+                    <li>{{ t }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <blockquote class="description">
+                {{ page.description }}
+            </blockquote>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div itemprop="articleBody">
+            {%- if page.company_hero -%}
+            <img src="{{ page.company_hero }}" alt="" title="" /><br/><br/>
+            {%- endif -%}
+            {{ content }}
+        </div>
+    </div>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

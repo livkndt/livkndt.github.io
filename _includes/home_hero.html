@@ -1,0 +1,20 @@
+<section class="home-hero">
+    <div class="wrapper">
+        <div class="hero-left">
+            {{ content }}
+        </div>
+        <div class="hero-right">
+            <picture>
+                <source srcset="{{ page.hero_image_alt }}" type="image/webp">
+                <source srcset="{{ page.hero_image }}" type="image/jpeg">
+                <img src="{{ page.hero_image }}"
+                     alt=""
+                     title=""
+                     loading="eager"
+                     fetchpriority="high"
+                />
+            </picture>
+
+        </div>
+    </div>
+</section>
