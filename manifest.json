@@ -1,0 +1,12 @@
+{
+  "short_name": "Olivia Knoedt",
+  "name": "Olivia Knoedt",
+  "icons": [],
+  "start_url": "/",
+  "background_color": "#dddddd",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/",
+  "theme_color": "#bd7da8",
+  "splash_pages": null
+}

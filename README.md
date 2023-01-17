@@ -1,6 +1,12 @@
 # livkndt.github.io
 This is the code for my personal website, built using Jekyll and deployed to Github Pages.
 
+![](readme_img/lighthouse_accessibility.svg)
+![](readme_img/lighthouse_best-practices.svg)
+![](readme_img/lighthouse_performance.svg)
+![](readme_img/lighthouse_pwa.svg)
+![](readme_img/lighthouse_seo.svg)
+
 ## Requirements
 - Ruby v2.5.0 or higher (`ruby -v`)
 - RubyGems (`gem -v`)
