@@ -6,12 +6,14 @@ layout: default
 
   {%- include home_hero.html -%}
 
-  {%- if site.positions.size > 0 -%}
-    {%- include positions_grid.html -%}
-  {%- endif -%}
-
   {%- if site.posts.size > 0 -%}
     {%- include posts_grid.html -%}
+  {%- endif -%}
+
+  <hr>
+
+  {%- if site.positions.size > 0 -%}
+    {%- include positions_grid.html -%}
   {%- endif -%}
 
 </div>

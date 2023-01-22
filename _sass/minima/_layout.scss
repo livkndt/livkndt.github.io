@@ -279,29 +279,12 @@
     }
   }
 
-  .posts article {
-    min-width: 15%;
-
-    @include media-query($on-laptop) {
-      min-width: 25%;
-    }
-
-    @include media-query($on-palm) {
-      min-width: 50%;
-    }
-  }
-
   .top {
     background-color: lighten($brand-color, 35%);
     border-radius: $spacing-unit $spacing-unit 0 0;
     background-position: center;
     background-size: cover;
     height: calc(#{$spacing-unit} * 6);
-  }
-
-  .posts .top {
-    background-color: lighten(#49A9AB, 35%);
-    height: calc(#{$spacing-unit} * 2);
   }
 
   .bottom p {
@@ -347,7 +330,7 @@ ul.tech, ul.post-categories {
   }
 }
 
-ul.post-categories li {
+ul.tech li {
   background-color: teal;
 }
 
@@ -357,8 +340,13 @@ ul.post-categories li {
 .position {
   > .wrapper {
     padding: $spacing-unit 0;
+
+    @include media-query($on-palm) {
+      padding: $spacing-unit calc(#{$spacing-unit} / 2);
+    }
   }
 }
+
 .position-hero {
   padding: $spacing-unit 0;
   background-color: #fff;
@@ -402,8 +390,19 @@ ul.post-categories li {
 /**
  * Posts
  */
+.post {
+  > .wrapper {
+    padding: $spacing-unit 0;
+
+    @include media-query($on-palm) {
+      padding: $spacing-unit calc(#{$spacing-unit} / 2);
+    }
+  }
+}
+
 .post-header {
-  margin-bottom: $spacing-unit;
+  padding: $spacing-unit 0;
+  background-color: #fff;
 }
 
 .post-title {
