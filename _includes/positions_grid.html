@@ -2,7 +2,8 @@
     <div class="wrapper">
         <h2>Experience</h2>
         <div class="positions">
-            {%- for position in site.positions -%}
+            {% assign positions_by_date = site.positions | sort: "start" | reverse %}
+            {%- for position in positions_by_date -%}
             <article>
                 <a href="{{ position.url | relative_url }}">
                     <div class="top" style="background-image: url('{{ position.company_hero_alt | prepend: site.cdn_url }}')"></div>
