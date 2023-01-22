@@ -18,6 +18,9 @@ show_nav: false
 site_credits: >-
   This website was built using Jekyll & is evolved from their Minima theme. 💜
 
+disqus:
+  shortname: livkndt
+
 collections:
   positions:
     output: true
@@ -59,3 +62,4 @@ exclude:
    - vendor/ruby/
    - readme_img/
    - development/
+   - sw.js
