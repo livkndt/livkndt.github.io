@@ -96,9 +96,8 @@ designers think and approach design, and in return they got an insight into the 
 code and components. We came to an agreement on how to organize the way we work and how to structure our product, 
 giving ownership to all parties. This helped us build a shared language across disciplines.
 
-{% figure [caption:"Existing design broken down into individual components"] %}
 ![Existing design broken down into individual components](https://d19w7e3j8gkywb.cloudfront.net/posts/design-systems-1.png)
-{% endfigure %}
+*Existing design broken down into individual components*
 
 ## Iteration and Improvement
 We built the design system into our process so that we could easily maintain and develop it. We focused on design 
@@ -135,6 +134,5 @@ Seeing how a simple change in approach can make a big improvement in cross-disci
 and I'm excited to see how we can continue to improve our working process to build better products through practical 
 and creative collaboration.
 
-{% figure [caption:"Screenshot of the design system in Storybook"] %}
 ![Screenshot of the design system in Storybook](https://d19w7e3j8gkywb.cloudfront.net/posts/design-systems-2.png)
-{% endfigure %}
+*Screenshot of the design system in Storybook*

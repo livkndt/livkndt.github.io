@@ -7,6 +7,7 @@ baseurl: ""
 markdown: kramdown
 cdn_url: https://d19w7e3j8gkywb.cloudfront.net/
 paginate: 3
+timezone: Europe/London
 
 twitter_username: olivzz
 github_username:  livkndt
@@ -42,7 +43,6 @@ defaults:
     values:
       layout: "default"
 
-# Enable safe mode
 safe: true
 
 theme: minima
@@ -51,7 +51,6 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - liquid_reading_time
-  - jekyll-figure
   - jekyll-paginate
   - jekyll-loading-lazy
 sass:
