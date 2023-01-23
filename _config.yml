@@ -42,6 +42,9 @@ defaults:
     values:
       layout: "default"
 
+# Enable safe mode
+safe: true
+
 theme: minima
 plugins:
   - jekyll-feed
