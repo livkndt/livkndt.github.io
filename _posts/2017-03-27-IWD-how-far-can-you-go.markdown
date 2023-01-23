@@ -14,7 +14,7 @@ both positive and challenging.
 I was invited to join the 7-hour public speaking bootcamp, and along with another young woman and the help of an 
 Accenture mentor, came up with a talk around the theme of "How far can you go?". You can watch our segment on YouTube.
 
-[Accenture - International Women's Day: How Far Can You Go? | ThinkNation](https://thinknation.co/casestudy/nulla-vitae-elit-libero-a-pharetra-augue/)
+[Accenture - International Women's Day: How Far Can You Go? \| ThinkNation](https://thinknation.co/casestudy/nulla-vitae-elit-libero-a-pharetra-augue/)
 
 ## Tweet
 
