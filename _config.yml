@@ -6,6 +6,7 @@ url: https://livkndt.github.io
 baseurl: ""
 markdown: kramdown
 cdn_url: https://d19w7e3j8gkywb.cloudfront.net/
+paginate: 3
 
 twitter_username: olivzz
 github_username:  livkndt
@@ -46,6 +47,10 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - liquid_reading_time
+  - jekyll-figure
+  - jekyll-paginate
+  - jekyll-loading-lazy
 sass:
   style: compressed
 
@@ -62,4 +67,3 @@ exclude:
    - vendor/ruby/
    - readme_img/
    - development/
-   - sw.js

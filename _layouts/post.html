@@ -15,6 +15,9 @@ layout: default
                 • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card"
                                                                                               itemprop="name">{{ page.author }}</span></span>
                 {%- endif -%}
+                •
+                {% capture time %}{{ content | reading_time }}{% endcapture %}
+                {{ time }} min read
             </p>
             <div>
                 <ul class="post-categories">

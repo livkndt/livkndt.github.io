@@ -2,7 +2,7 @@
     <div class="wrapper">
         <h2>Posts</h2>
         <div class="posts">
-            {%- for post in site.posts -%}
+            {%- for post in paginator.posts -%}
             <article>
                 <div class="top" style="background-image: url('{{ post.image_url }}')"></div>
                 <div class="bottom">
@@ -26,6 +26,21 @@
                 </div>
             </article>
             {%- endfor -%}
+        </div>
+        <div class="pagination">
+            {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+            {% else %}
+                <span class="previous">Previous</span>
+            {% endif %}
+            <span class="page_number ">
+                (Page {{ paginator.page }} of {{ paginator.total_pages }})
+            </span>
+            {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+            {% else %}
+                <span class="next ">Next</span>
+            {% endif %}
         </div>
         <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
     </div>

@@ -175,6 +175,28 @@
 /**
  * Home Hero
  */
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    transform: translate3d(0,40px,0)
+  }
+
+  to {
+    transform: translate3d(0,0,0);
+    opacity: 1
+  }
+}
+
 .home-hero {
   padding: calc(#{$spacing-unit} * 3) 0;
   background-color: #fff;
@@ -242,6 +264,16 @@
 /**
  * Positions & Posts (Grids)
  */
+.blog {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  opacity: 0;
+  animation-name: fadeInUp;
+  -webkit-animation-name: fadeInUp;
+}
+
 .experience, .blog {
   padding: $spacing-unit 0;
 
@@ -449,4 +481,8 @@ ul.tech li {
       @include relative-font-size(1.125);
     }
   }
+}
+
+.pagination {
+  text-align: center;
 }
