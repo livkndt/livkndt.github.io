@@ -50,7 +50,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - liquid_reading_time
   - jekyll-paginate
   - jekyll-loading-lazy
 sass:

@@ -8,7 +8,6 @@ group :jekyll_plugins do
   gem 'jekyll-sitemap'
   gem 'jekyll-feed'
   gem 'jekyll-seo-tag'
-  gem 'liquid_reading_time'
   gem 'jekyll-paginate'
   gem 'jekyll-loading-lazy'
 end
