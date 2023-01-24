@@ -490,3 +490,69 @@ ul.tech li {
 .instagram {
   margin-bottom: $spacing-unit;
 }
+
+/**
+ * Cookie Banner
+ */
+#cookie-notice {
+  position: fixed;
+  background: #eee;
+  height: auto;
+  bottom: 0;
+  width: 100%;
+  font-size: $small-font-size;
+  display: none;
+
+  @include media-query($content-width) {
+    font-size: 12px;
+
+    .wrapper {
+      flex-direction: column;
+
+      div {
+        padding: calc(#{$spacing-unit} / 8) 0!important;
+        text-align: center;
+      }
+    }
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: calc(#{$spacing-unit} / 2)!important;
+
+    div {
+      padding: calc(#{$spacing-unit} / 2) 0;
+    }
+  }
+
+  a#cookie-notice-accept {
+    background-color: $brand-color;
+    color: #fff;
+    border-style: none;
+    box-sizing: border-box;
+    padding: 4px calc(#{$spacing-unit} / 2);
+    margin: 0 calc(#{$spacing-unit} / 2);
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+    outline: none;
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: $title-font-family;
+
+    &:hover {
+      text-decoration: none;
+      background-color: darken($brand-color, 25%);
+    }
+
+    &:focus {
+      user-select: auto;
+    }
+  }
+}

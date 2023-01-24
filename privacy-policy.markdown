@@ -4,7 +4,7 @@ layout: page
 
 # Privacy Policy
 
-_Last updated January 22, 2023_
+_Last updated January 24, 2023_
 
 This privacy notice for Olivia Knoedt, describes how and why we might collect, store, use, and/or share ('process') 
 your information when you use our services ('Services'), such as when you:
@@ -54,7 +54,7 @@ Click [here](#table-of-contents) to review the notice in full.
 * [1. What information do we collect?](#1-what-information-do-we-collect)
 * [2. How do we process your information?](#2-how-do-we-process-your-information)
 * [3. What legal bases do we rely on to process your information?](#3-what-legal-bases-do-we-rely-on-to-process-your-information)
-* [4.When and with whom do we share your personal information?](#4when-and-with-whom-do-we-share-your-personal-information)
+* [4. When and with whom do we share your personal information?](#4-when-and-with-whom-do-we-share-your-personal-information)
 * [5. How long do we keep your information?](#5-how-long-do-we-keep-your-information)
 * [6. Do we collect information from minors?](#6-do-we-collect-information-from-minors)
 * [7. What are your privacy rights?](#7-what-are-your-privacy-rights)
@@ -82,7 +82,8 @@ of any changes to such personal information.
 **Information automatically collected**
 
 *In Short*: Some information — such as your Internet Protocol (IP) address and/or browser and device 
-characteristics — is collected automatically when you visit our Services.
+characteristics — is collected automatically when you visit our Services. This information is only collected if you 
+click "Accept" on the site's cookie banner (please refer to our [Cookie Policy](/cookie-policy.html)).
 
 We automatically collect certain information when you visit, use, or navigate the Services. This information does 
 not reveal your specific identity (like your name or contact information) but may include device and usage 
@@ -91,7 +92,11 @@ referring URLs, device name, country, location, information about how and when y
 technical information. This information is primarily needed to maintain the security and operation of our Services, 
 and for our internal analytics and reporting purposes.
 
-The information we collect includes:
+Note: automated data collection is done via Google Analytics, and we make use of the IP anonymization feature provided, 
+read more here:
+[https://support.google.com/analytics/answer/2763052?hl=en](https://support.google.com/analytics/answer/2763052?hl=en).
+
+The information we collect may include:
 - *Log and Usage Data*. Log and usage data is service-related, diagnostic, usage, and performance information our 
 servers automatically collect when you access or use our Services and which we record in log files. Depending on how 
 you interact with us, this log data may include your IP address, device information, browser type, and settings and 
@@ -155,7 +160,7 @@ rights, or disclose your information as evidence in litigation in which we are i
 - **Vital Interests**. We may process your information where we believe it is necessary to protect your vital interests 
 or the vital interests of a third party, such as situations involving potential threats to the safety of any person.
 
-## 4.When and with whom do we share your personal information?
+## 4. When and with whom do we share your personal information?
 
 *In Short*: We may share information in specific situations described in this section and/or with 
 the following third parties.

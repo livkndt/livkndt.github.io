@@ -4,7 +4,9 @@
         <div class="posts">
             {%- for post in paginator.posts -%}
             <article>
-                <div class="top" style="background-image: url('{{ post.image_url }}')"></div>
+                <a href="{{ post.url | relative_url }}">
+                    <div class="top" style="background-image: url('{{ post.image_url }}')"></div>
+                </a>
                 <div class="bottom">
                     <h3>
                         <a href="{{ post.url | relative_url }}">

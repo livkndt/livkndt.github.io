@@ -55,8 +55,9 @@ layout: default
             {{ content }}
         </div>
 
-        {%- if site.disqus.shortname -%}
-        {%- include disqus_comments.html -%}
+        {%- if site.disqus.shortname and page.comments != false and jekyll.environment == "production" -%}
+            <div id="disqus_thread"></div>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
         {%- endif -%}
     </div>
 
