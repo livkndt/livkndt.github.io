@@ -1,7 +1,7 @@
 ---
 title: "WWC Talk Night at BCG DV - \"Building start-ups with speed and quality\""
 date: 2018-06-21 00:00:00 +0000
-category: speaking
+tags: speaking
 image_url: https://d19w7e3j8gkywb.cloudfront.net/posts/speed-and-quality.png
 image_url_alt: https://d19w7e3j8gkywb.cloudfront.net/posts/speed-and-quality.webp
 --- 

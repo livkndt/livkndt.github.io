@@ -276,14 +276,14 @@
 
 .experience, .blog {
   padding: $spacing-unit 0;
+}
 
-  .positions, .posts {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-left: calc(#{-$spacing-unit} / 2);
-    margin-right: calc(#{-$spacing-unit} / 2);
-  }
+.positions, .posts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: calc(#{-$spacing-unit} / 2);
+  margin-right: calc(#{-$spacing-unit} / 2);
 
   article {
     background-color: #ffffff;

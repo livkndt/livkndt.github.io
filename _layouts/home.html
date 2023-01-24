@@ -6,9 +6,14 @@ layout: default
 
   {%- include home_hero.html -%}
 
-  {%- if site.posts.size > 0 -%}
-    {%- include posts_grid.html -%}
-  {%- endif -%}
+  <section class="blog">
+    <div class="wrapper">
+      <h2>Recent Posts</h2>
+      {%- if site.posts.size > 0 -%}
+        {%- include posts_grid.html posts=site.posts show_max=3 -%}
+      {%- endif -%}
+    </div>
+  </section>
 
   <hr>
 

@@ -25,8 +25,8 @@ layout: default
             </p>
             <div>
                 <ul class="post-categories">
-                    {% for c in page.categories %}
-                    <li>{{ c }}</li>
+                    {% for t in page.tags %}
+                    <li><a href="{{ site.baseurl }}/tag/{{ t | slugify }}">{{ t }}</a></li>
                     {% endfor %}
                 </ul>
             </div>

@@ -1,7 +1,7 @@
 ---
 title: "Working in Harmony: Using Design Systems for Better Collaboration"
 date: 2019-03-20 00:00:00 +0000
-category: writing
+tags: writing
 image_url: https://d19w7e3j8gkywb.cloudfront.net/posts/design-systems-hero.jpeg
 image_url_alt: https://d19w7e3j8gkywb.cloudfront.net/posts/design-systems-hero.webp
 --- 

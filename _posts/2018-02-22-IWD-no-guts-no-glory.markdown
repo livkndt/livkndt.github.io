@@ -1,7 +1,7 @@
 ---
 title: "International Women's Day 2018 - No Guts No Glory (BCG DV)"
 date: 2018-02-22 00:00:00 +0000
-category: speaking
+tags: speaking
 image_url: https://d19w7e3j8gkywb.cloudfront.net/posts/no-guts-no-glory.jpg
 image_url_alt: https://d19w7e3j8gkywb.cloudfront.net/posts/no-guts-no-glory.webp
 --- 

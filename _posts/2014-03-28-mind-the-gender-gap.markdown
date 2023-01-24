@@ -1,7 +1,7 @@
 ---
 title:  "Mind the gender gap: Why being a woman in IT motivates me to be successful"
 date:   2014-03-28 00:00:00 +0000
-category: writing
+tags: writing
 image_url: https://d19w7e3j8gkywb.cloudfront.net/posts/mind-the-gender-gap.png
 image_url_alt: https://d19w7e3j8gkywb.cloudfront.net/posts/mind-the-gender-gap.webp
 ---

@@ -1,7 +1,7 @@
 ---
 title:  "International Women's Day 2017 - How far can you go? (ThinkNation)"
 date:   2017-03-27 00:00:00 +0000
-category: speaking
+tags: speaking
 image_url: https://d19w7e3j8gkywb.cloudfront.net/posts/how-far-can-you-go.png
 image_url_alt: https://d19w7e3j8gkywb.cloudfront.net/posts/how-far-can-you-go.webp
 ---

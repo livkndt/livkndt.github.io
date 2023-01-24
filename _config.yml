@@ -6,7 +6,8 @@ url: https://livkndt.github.io
 baseurl: ""
 markdown: kramdown
 cdn_url: https://d19w7e3j8gkywb.cloudfront.net/
-paginate: 3
+paginate: 9
+paginate_path: "/blog/page:num/"
 timezone: Europe/London
 
 twitter_username: olivzz
@@ -16,7 +17,6 @@ instagram_username: livkndt_dev
 google_analytics: G-HBNW26P4Y8
 
 show_excerpts: true
-show_nav: false
 site_credits: >-
   This website was built using Jekyll & is evolved from their Minima theme. 💜
 

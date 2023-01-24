@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="post">
+    <div class="wrapper">
+        <h1>Tag: {{ page.tag }}</h1>
+        <span>
+            <a href="{{ "/blog" | relative_url }}">Blog</a> >
+            {{ page.tag }}
+        </span>
+        <div>
+            {%- for tag in site.tags -%}
+                {%- if tag[0] == page.tag -%}
+                    {%- assign tag_posts = tag[1] -%}
+                    {%- include posts_grid.html posts=tag_posts -%}
+                {%- endif -%}
+            {%- endfor -%}
+        </div>
+    </div>
+</div>
