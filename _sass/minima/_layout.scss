@@ -354,11 +354,15 @@ ul.tech, ul.post-categories {
   li {
     float: left;
     background-color: $brand-color;
-    color: $background-color;
     margin-right: 5px;
     border-radius: 5px;
     padding: 0 6px;
     margin-bottom: 6px;
+    color: $background-color;
+
+    a {
+      color: $background-color;
+    }
   }
 }
 

@@ -20,8 +20,8 @@
                     <small>{{ post.date | date: date_format }}</small>
                 </div>
                 <ul class="post-categories">
-                    {%- for c in post.categories -%}
-                    <li>{{ c }}</li>
+                    {%- for t in post.tags -%}
+                    <li>{{ t }}</li>
                     {%- endfor -%}
                 </ul>
                 {%- if site.show_excerpts -%}

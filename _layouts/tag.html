@@ -2,12 +2,12 @@
 layout: default
 ---
 
-<div class="post">
+<article class="post">
     <div class="wrapper">
         <h1>Tag: {{ page.tag }}</h1>
         <span>
-            <a href="{{ "/blog" | relative_url }}">Blog</a> >
-            {{ page.tag }}
+            <a href="{{ "/blog" | relative_url }}"><code class="highligher-rouge"><nobr>Blog</nobr></code></a> >
+            <code class="highligher-rouge"><nobr>{{ page.tag }}</nobr></code>
         </span>
         <div>
             {%- for tag in site.tags -%}
@@ -18,4 +18,4 @@ layout: default
             {%- endfor -%}
         </div>
     </div>
-</div>
+</article>
