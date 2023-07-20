@@ -1,6 +1,7 @@
 ---
 title: Head of Engineering
 start: 2019-05-01 00:00:00 +0000
+end: 2023-07-12 00:00:00 +0000
 description: "OpenSC uses cutting edge technology to verify low-carbon and sustainable food production at source. The 
 aim is to help businesses and consumers avoid illegal, environmentally damaging or unethical products, while improving 
 supply chain accountability and transparency."

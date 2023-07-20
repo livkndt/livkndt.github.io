@@ -9,12 +9,14 @@ This is the code for my personal website, built using Jekyll and deployed to Git
 
 ## Requirements
 - Ruby v2.5.0 or higher (`ruby -v`)
+  - On Mac OS, recommended to use a different version of ruby than the default install - see chruby and https://jekyllrb.com/docs/installation/macos/
 - RubyGems (`gem -v`)
 - [GCC](https://gcc.gnu.org/install/) and [Make](https://www.gnu.org/software/make/) (check versions using `gcc -v`,`g++ -v`, and `make -v`)
 - [Jekyll](https://jekyllrb.com/docs/installation/) (`gem install jekyll`)
 
 ## Installation
 ```shell
+$ bundle install
 $ bundle exec jekyll serve --livereload
 ```
 Since Jekyll is a static site generator, it has to build the site before we can view it. Run either of the following commands to build your site:
