@@ -1,41 +1,41 @@
-<section class="experience">
-    <div class="wrapper">
-        <h2>Experience</h2>
-        <div class="positions">
-            {% assign positions_by_date = site.positions | sort: "start" | reverse %}
-            {%- for position in positions_by_date -%}
-            <article>
-                <a href="{{ position.url | relative_url }}">
-                    <div class="top" style="background-image: url('{{ position.company_hero_alt | prepend: site.cdn_url }}')"></div>
-                </a>
-                <div class="bottom">
-                    <h3><a href="{{ position.url | relative_url }}">{{ position.title | escape }}</a></h3>
-                    <div class="company">
-                        <h4>
-                            {%- if position.company_logo -%}
-                            <img src="{{ position.company_logo | prepend: site.cdn_url }}" alt="" title="" />
-                            {%- endif -%}
-                            <a class="company-url" href="{{ position.company_url }}" target="_blank">{{ position.company }}</a>
-                        </h4>
-                        <small>
-                            {{ position.start | date: "%b %Y" }} -&nbsp;
-                            {%- if position.end -%}
-                                {{ position.end | date: "%b %Y" }}
-                            {%- else -%}
-                                Present
-                            {%- endif -%}
-                        </small>
-                    </div>
-                    {% assign tech = position.tech | split: ", " %}
-                    <ul class="tech">
-                        {%- for t in tech -%}
-                        <li>{{ t }}</li>
-                        {%- endfor -%}
-                    </ul>
-                    <p>{{ position.description }}</p>
-                </div>
-            </article>
-            {%- endfor -%}
+<div class="positions">
+    {%- if include.show_max -%}
+      {%- assign loop = include.show_max -%}
+    {%- else -%}
+      {%- assign loop = include.posts.size -%}
+    {%- endif -%}
+    {% assign positions_by_date = site.positions | sort: "end" | reverse %}
+    {%- for position in positions_by_date limit:loop -%}
+    <article>
+        <a href="{{ position.url | relative_url }}">
+            <div class="top" style="background-image: url('{{ position.company_hero_alt | prepend: site.cdn_url }}')"></div>
+        </a>
+        <div class="bottom">
+            <h3><a href="{{ position.url | relative_url }}">{{ position.title | escape }}</a></h3>
+            <div class="company">
+                <h4>
+                    {%- if position.company_logo -%}
+                    <img src="{{ position.company_logo | prepend: site.cdn_url }}" alt="" title="" />
+                    {%- endif -%}
+                    <a class="company-url" href="{{ position.company_url }}" target="_blank">{{ position.company }}</a>
+                </h4>
+                <small>
+                    {{ position.start | date: "%b %Y" }} -&nbsp;
+                    {%- if position.end -%}
+                        {{ position.end | date: "%b %Y" }}
+                    {%- else -%}
+                        Present
+                    {%- endif -%}
+                </small>
+            </div>
+            {% assign tech = position.tech | split: ", " %}
+            <ul class="tech">
+                {%- for t in tech -%}
+                <li>{{ t }}</li>
+                {%- endfor -%}
+            </ul>
+            <p>{{ position.description }}</p>
         </div>
-    </div>
-</section>
+    </article>
+    {%- endfor -%}
+</div>

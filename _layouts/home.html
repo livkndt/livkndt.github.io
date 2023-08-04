@@ -4,25 +4,36 @@ layout: default
 
 <div class="home">
 
-  {%- include home_hero.html -%}
+    {%- include home_hero.html -%}
 
-  <section class="blog">
-    <div class="wrapper">
-      <h2>Recent Posts</h2>
-      {%- if site.posts.size > 0 -%}
-        {%- include posts_grid.html posts=site.posts show_max=3 -%}
-      {%- endif -%}
-    </div>
-  </section>
+    <section class="blog">
+        <div class="wrapper">
+            <div style="display: flex; justify-content: space-between;">
+                <h2>Recent Posts</h2>
+                <span>📙 <a href="{{ "/blog" | relative_url }}">See all Posts ></a></span>
+            </div>
+            {%- if site.posts.size > 0 -%}
+            {%- include posts_grid.html posts=site.posts show_max=3 -%}
+            {%- endif -%}
+        </div>
+    </section>
 
-  <hr>
+    <hr>
 
-  {%- if site.positions.size > 0 -%}
-    {%- include positions_grid.html -%}
-  {%- endif -%}
+    <section class="experience">
+        <div class="wrapper">
+            <div style="display: flex; justify-content: space-between;">
+                <h2>Experience</h2>
+                <span>👩🏼‍💻 <a href="{{ "/experience" | relative_url }}">See all Experience ></a></span>
+            </div>
+            {%- if site.positions.size > 0 -%}
+            {%- include positions_grid.html show_max=3 -%}
+            {%- endif -%}
+        </div>
+    </section>
 
-  <hr>
+    <hr>
 
-  {%- include behold_feed.html -%}
+    {%- include behold_feed.html -%}
 
 </div>
