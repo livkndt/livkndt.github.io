@@ -52,7 +52,7 @@ the code base for the full working examples, and feel free to reach out if you h
 * I went for a RESTful API built using **Node.js**, **Express** and **TypeScript**. I've been using TypeScript for 
 several years now, and it's definitely my preference over plain JavaScript, especially working as a full-stack dev 
 where I'm often switching between front-end and back-end code (often Java/Kotlin which is strongly typed).
-* I added [`husky`](https://github.com/typicode/husky), [eslint](https://eslint.org/),
+* I added [`husky`](https://github.com/typicode/husky), [`eslint`](https://eslint.org/),
 [`prettier`](https://github.com/prettier/prettier), 
 [`commitlint`](https://github.com/conventional-changelog/commitlint) and 
 [`lint-staged`](https://github.com/okonet/lint-staged) for decent commit messages using conventional commits, 
@@ -61,8 +61,8 @@ and to help ensure consistent code formatting and linting.
 * I added a very basic **GitHub Actions** pipeline to run the tests when code is pushed, and used the automated 
 deployment feature from **Heroku**.
 * I'm using **Dependabot** which is natively integrated into GitHub to check for any dependencies that need updating.
-* I also added a GitHub integration with Snyk for this repo which performs static code analysis - an incredibly 
-useful tool for encouraging secure engineering practices, check them out at https://snyk.io/
+* I also added a GitHub integration with **Snyk** for this repo which performs static code analysis - an incredibly 
+useful tool for encouraging secure engineering practices, check them out at [https://snyk.io/](https://snyk.io/).
 * I'm using the [`node-canvas`](https://GitHub.com/Automattic/node-canvas) library to generate the inspirational images.
 * I added [`helmet`](https://helmetjs.github.io/) and 
 [`express-rate-limit`](https://github.com/express-rate-limit/express-rate-limit) to help secure the API and prevent abuse.
@@ -109,7 +109,7 @@ describe('GET /', () => {
 
 You'll need to install Jest & Supertest:
 ```bash
-npm install --save-dev jest supertest @types/jest @types/supertest
+$ npm install --save-dev jest supertest @types/jest @types/supertest
 ```
 
 and add a script to your package.json to run the tests:
@@ -121,7 +121,7 @@ and add a script to your package.json to run the tests:
 
 and then you'll be good to go!
 ```bash
-npm test
+$ npm test
 ```
 ### Husky, prettier, commitlint & lint-staged for code quality
 Husky is a tool for setting up git hooks - it can automatically run tasks on git commit, git push and more.
@@ -145,7 +145,7 @@ module.exports = {
 Now you have commitlint installed, you want to have it run on a git hook - in this case, whenever you run `git commit`.
 This will check your commit message to ensure it follows the conventional commit style.
 ```bash
-npm install --save-dev husky
+$ npm install --save-dev husky
 ```
 
 Update your package.json scripts:
@@ -357,7 +357,7 @@ so I didn't need to do anything 😍
       - name: Use Node.js <node_version>
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.node-version }}
+          node-version: <node_version>
           cache: 'npm'
 
       - name: Install dependencies
