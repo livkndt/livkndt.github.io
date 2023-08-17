@@ -17,9 +17,4 @@
       {% include cookie_consent.html %}
     {%- endif -%}
   </body>
-
-  {%- if site.google_analytics and jekyll.environment == "production" -%}
-  <!-- Google tag (gtag.js) -->
-  <script defer src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-  {%- endif -%}
 </html>
