@@ -7,7 +7,7 @@
     {%- for post in include.posts limit:loop -%}
         <article>
             <a href="{{ post.url | relative_url }}">
-                <div class="top" style="background-image: url('{{ post.image_url }}')"></div>
+                <div class="top" style="background-image: url('{{ post.image_url_alt }}')"></div>
             </a>
             <div class="bottom">
                 <h3>
