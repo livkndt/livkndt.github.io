@@ -4,7 +4,7 @@
     {%- else -%}
       {%- assign loop = include.posts.size -%}
     {%- endif -%}
-    {% assign positions_by_date = site.positions | sort: "end" | reverse %}
+    {% assign positions_by_date = site.positions | sort: "start" | reverse %}
     {%- for position in positions_by_date limit:loop -%}
     <article>
         <a href="{{ position.url | relative_url }}">

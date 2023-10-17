@@ -1,8 +1,6 @@
 title: Olivia Knoedt
 description: >-
-  Olivia is a software engineer from London, UK. While this site is to showcase her technical work in the software 
-  development industry, and you'll also find her knitting & crochet content here (and perhaps from time-to-time,
-  a blend of the two!).
+  Olivia is a software engineer from London, UK. She's currently at 101 Ways as a Lead Tech Consultant.
 domain: livkndt.github.io
 url: https://livkndt.github.io
 baseurl: ""
@@ -15,8 +13,9 @@ timezone: Europe/London
 github_username:  livkndt
 linkedin_username: oliviaknoedt
 instagram_username: livkndt_dev
-instagram_username_2: liv_knits
+instagram_username_2: oliv_knits
 google_analytics: G-HBNW26P4Y8
+medium_username: oliviaknoedt
 
 show_excerpts: true
 site_credits: >-
