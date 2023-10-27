@@ -1,0 +1,30 @@
+<picture>
+    <!-- WebP format for modern browsers that support it -->
+    <source
+            srcset="
+            {{ include.image_name | prepend: site.cdn_url }}@5x.{{ include.image_alt_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@4x.{{ include.image_alt_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@3x.{{ include.image_alt_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@2x.{{ include.image_alt_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@1x.{{ include.image_alt_type }}"
+            sizes="(max-width: 100%) 100vw, (max-width: 800px) 80vw, (max-width: 600px) 60vw, (max-width: 400px) 40vw, (max-width: 200px) 20vw"
+            type="image/webp"
+    >
+    <!-- JPEG format for fallback -->
+    <source
+            srcset="
+            {{ include.image_name | prepend: site.cdn_url }}@5x.{{ include.image_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@4x.{{ include.image_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@3x.{{ include.image_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@2x.{{ include.image_type }},
+            {{ include.image_name | prepend: site.cdn_url }}@1x.{{ include.image_type }}"
+            sizes="(max-width: 100%) 100vw, (max-width: 800px) 80vw, (max-width: 600px) 60vw, (max-width: 400px) 40vw, (max-width: 200px) 20vw"
+            type="image/jpeg"
+    >
+    <img
+            src="{{ include.image_name | prepend: site.cdn_url }}@5x.{{ include.image_type }}"
+            alt=""
+            title=""
+            loading="lazy"
+    >
+</picture>

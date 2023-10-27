@@ -13,3 +13,5 @@ vendor/
 
 # WIP
 development/
+
+image_upload.sh
