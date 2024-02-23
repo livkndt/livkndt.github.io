@@ -12,9 +12,6 @@
     </main>
 
     {%- include footer.html -%}
-
-    {%- if jekyll.environment == "production" -%}
-      {% include cookie_consent.html %}
-    {%- endif -%}
+    {% include cookie_consent.html %}
   </body>
 </html>

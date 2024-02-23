@@ -1,12 +1,13 @@
 <div id="cookie-notice">
     <div class="wrapper">
         <div>
-            🍪 This website uses third-party cookies to improve the experience and to analyse (anonymous) traffic.
-        </div>
-        <div>
-            <a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a>
+            🍪  By continuing to browse this website you accept the use of cookies to improve the experience and to analyse (anonymous) traffic.
+            <br>
             <a href="{{ "/privacy-policy.html" | relative_url }}">Privacy Policy</a> •
             <a href="{{ "/cookie-policy.html" | relative_url }}">Cookie Policy</a>
+        </div>
+        <div>
+            <a id="cookie-notice-accept" class="btn btn-primary btn-sm">X</a>
         </div>
     </div>
 </div>
@@ -33,14 +34,7 @@
         return null;
     }
 
-    function eraseCookie(name) {
-        createCookie(name, "", -1);
-    }
-
-    if (readCookie("cookie-notice-dismissed") === "true") {
-        {%- include google_analytics.js -%}
-        {%- include disqus_config.js -%}
-    } else {
+    if (readCookie("cookie-notice-dismissed") === null) {
         document.getElementById("cookie-notice").style.display = "block";
     }
 

@@ -8,4 +8,8 @@
   <meta name="theme-color" content="#BD7DA8"/>
   <link rel="apple-touch-icon" href="https://d19w7e3j8gkywb.cloudfront.net/livkndt_icon_192_192.png">
   {%- feed_meta -%}
+  {%- if jekyll.environment == "production" -%}
+    {%- include google_analytics.html -%}
+    {%- include disqus_config.html -%}
+  {%- endif -%}
 </head>
