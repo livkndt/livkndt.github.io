@@ -1,0 +1,31 @@
+<div class="projects">
+    {%- if include.show_max -%}
+        {%- assign loop = include.show_max -%}
+    {%- else -%}
+        {%- assign loop = include.posts.size -%}
+    {%- endif -%}
+    {%- for project in site.projects limit:loop -%}
+        <article>
+            <a href="{{ project.url | relative_url }}">
+                <div class="top" style="background-image: url('{{ project.image | prepend: site.cdn_url }}')"></div>
+            </a>
+            <div class="bottom">
+                <h3>
+                    <a href="{{ project.url | relative_url }}">
+                        {{ project.title | escape }}
+                    </a>
+                </h3>
+                <div class="project-url">
+                    🖇️ <a href="{{ project.project_url }}" target="_blank">{{ project.project_url }}</a>
+                </div>
+                {% assign tech = project.tech | split: ", " %}
+                <ul class="tech">
+                    {%- for t in tech -%}
+                    <li>{{ t }}</li>
+                    {%- endfor -%}
+                </ul>
+                <p>{{ project.description }}</p>
+            </div>
+        </article>
+    {%- endfor -%}
+</div>

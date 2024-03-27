@@ -1,0 +1,43 @@
+---
+layout: default
+---
+<article class="project">
+    <header class="project-hero">
+        <div class="wrapper">
+            <h1 itemprop="name headline">{{ page.title | escape }}</h1><br>
+            <div class="project-url">
+                🖇️ <a href="{{ page.project_url }}" target="_blank">{{ page.project_url }}</a>
+            </div>
+            {% assign tech = page.tech | split: ", " %}
+            <div>
+                <ul class="tech">
+                    {% for t in tech %}
+                    <li>{{ t }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <blockquote class="description">
+                {{ page.description }}
+            </blockquote>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div itemprop="articleBody">
+            {%- if page.image -%}
+            <picture>
+                <source srcset="{{ page.image_alt | prepend: site.cdn_url }}" type="image/webp">
+                <source srcset="{{ page.image | prepend: site.cdn_url }}" type="image/png">
+                <img src="{{ page.image | prepend: site.cdn_url }}"
+                     alt=""
+                     title=""
+                     loading="eager"
+                     fetchpriority="high"
+                />
+            </picture>
+            <br/><br/>
+            {%- endif -%}
+            {{ content }}
+        </div>
+    </div>
+    <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

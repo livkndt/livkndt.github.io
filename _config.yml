@@ -1,6 +1,6 @@
 title: Olivia Knoedt
 description: >-
-  Olivia is a software engineer from London, UK. She's currently at 101 Ways as a Lead Tech Consultant.
+  Olivia is an engineering manager and software developer from London, UK. She's currently at 101 Ways as a Lead Tech Consultant.
 domain: livkndt.github.io
 url: https://livkndt.github.io
 baseurl: ""
@@ -26,8 +26,15 @@ disqus:
 collections:
   positions:
     output: true
+  projects:
+    output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
   - scope:
       path: ""
       type: "positions"

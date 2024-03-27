@@ -9,6 +9,14 @@ dl, dd, ol, ul, figure {
 }
 
 /**
+ * Smooth Scrolling
+ */
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+/**
  * Basic styling
  */
 body {

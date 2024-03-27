@@ -280,7 +280,7 @@
   padding: $spacing-unit 0;
 }
 
-.positions, .posts {
+.positions, .posts, .projects {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -294,6 +294,7 @@
     margin: calc(#{$spacing-unit} / 2);
     box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
     min-width: 25%;
+    max-width: 50%;
     transition: box-shadow 0.5s;
 
     &:hover {
@@ -375,7 +376,7 @@ ul.tech li {
 /**
  * Experience Page
  */
-.position {
+.position, .project {
   > .wrapper {
     padding: $spacing-unit 0;
 
@@ -383,6 +384,11 @@ ul.tech li {
       padding: $spacing-unit calc(#{$spacing-unit} / 2);
     }
   }
+}
+
+.project-hero {
+  padding: $spacing-unit 0;
+  background-color: #fff;
 }
 
 .position-hero {
