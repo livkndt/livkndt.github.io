@@ -10,7 +10,7 @@ layout: default
         <div class="wrapper">
             <div style="display: flex; justify-content: space-between;">
                 <h2>Recent Posts</h2>
-                <span>📙 <a href="{{ "/blog" | relative_url }}">See all Posts ></a></span>
+                <span><a href="{{ "/blog" | relative_url }}">See all Posts ></a></span>
             </div>
             {%- if site.posts.size > 0 -%}
             {%- include posts_grid.html posts=site.posts show_max=3 -%}
@@ -24,7 +24,7 @@ layout: default
         <div class="wrapper">
             <div style="display: flex; justify-content: space-between;">
                 <h2>Experience</h2>
-                <span>👩🏼‍💻 <a href="{{ "/experience" | relative_url }}">See all Experience ></a></span>
+                <span><a href="{{ "/experience" | relative_url }}">See all Experience ></a></span>
             </div>
             {%- if site.positions.size > 0 -%}
             {%- include positions_grid.html show_max=3 -%}

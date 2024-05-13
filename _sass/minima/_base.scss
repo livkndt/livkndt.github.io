@@ -110,47 +110,31 @@ hr {
  * Links
  */
 a {
-  color: $brand-color;
-  text-decoration: none;
+  color: $brand-color-tertiary;
   position: relative;
-
-  &.company-url {
-    color: $grey-color-dark!important;
-  }
-
-  &:visited {
-    color: lighten($brand-color, 10%);
-  }
+  text-decoration: none;
 
   &:hover {
-    text-decoration: underline;
+    transition: color 1s;
+    color: $brand-color;
   }
 
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
+  &:not(:hover) {
+    transition: color 1s;
+    color: $brand-color-tertiary;
   }
+}
 
-  &.site-title,
-  &.site-title {
-
-    &:hover {
-      &::before {
-        width: 0;
-      }
-    }
-  }
+.social-media-list li a {
+  text-decoration: none;
 }
 
 /**
  * Blockquotes
  */
 blockquote {
-  color: $grey-color;
-  border-left: 4px solid $grey-color-light;
+  color: $brand-color;
+  border-left: 4px solid $brand-color-secondary;
   padding-left: calc(#{$spacing-unit} / 2);
   @include relative-font-size(1.125);
   letter-spacing: -1px;
@@ -167,9 +151,9 @@ blockquote {
 pre,
 code {
   @include relative-font-size(0.9375);
-  border: 1px solid $grey-color-light;
+  border: 1px solid $grey-color;
   border-radius: 3px;
-  background-color: #eef;
+  background-color: $grey-color-light;
 }
 
 code {
@@ -223,7 +207,7 @@ pre {
   width: 16px;
   height: 16px;
   display: inline-block;
-  fill: #{$grey-color};
+  fill: #{$brand-color};
   padding-right: 5px;
   vertical-align: text-top;
 }

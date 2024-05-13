@@ -6,9 +6,11 @@ title: Blog
 <h1>Blog</h1>
 
 {% include collect_tags.html %}
+<ul class="post-categories">
 {% for tag in tags %}
-<a class="no-underline" href="/blog/{{ tag }}"><code class="highligher-rouge"><nobr>{{ tag }}</nobr></code></a>
+<li><a href="/blog/{{ tag }}">{{ tag }}</a></li>
 {% endfor %}
+</ul>
 
 {%- if paginator.posts.size > 0 -%}
   {%- include posts_grid.html posts=paginator.posts -%}
