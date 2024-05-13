@@ -3,19 +3,31 @@
 
 $base-font-family: 'DM Sans', sans-serif !default;
 $title-font-family: 'Alice', serif !default;
-$base-font-size:   16px !default;
+$base-font-size:   18px !default;
 $base-font-weight: 400 !default;
 $title-font-weight: 600 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.6 !default;
+$base-line-height: 1.8 !default;
 
 $spacing-unit:     30px !default;
 
-$text-color:            #287f68 !default;
-$background-color:      #bddca2 !default;
-$brand-color:           #287f68 !default;
-$brand-color-secondary: #e6702b !default;
-$brand-color-tertiary:  #545b23 !default;
+$text-color:            #b4494b !default;
+$background-color:      #ebdbe4 !default;
+$brand-color:           #b4494b !default;
+$brand-color-secondary: #d29895 !default;
+$brand-color-tertiary:  #d29895 !default;
+
+/*$text-color:            #4b8256 !default;
+$background-color:      #becdbb !default;
+$brand-color:           #4b8256 !default;
+$brand-color-secondary: #7d1051 !default;
+$brand-color-tertiary:  #850f66 !default;
+
+$text-color:            #850f66 !default;
+$background-color:      #e7d3d7 !default;
+$brand-color:           #850f66 !default;
+$brand-color-secondary: #7d1051 !default;
+$brand-color-tertiary:  #b26867 !default;*/
 
 $grey-color:       #efefef !default;
 $grey-color-light: lighten($grey-color, 40%) !default;

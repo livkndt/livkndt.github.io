@@ -32,6 +32,10 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+
+  @include media-query($on-palm) {
+    font-size: 16px;
+  }
 }
 
 /**
@@ -133,8 +137,8 @@ a {
  * Blockquotes
  */
 blockquote {
-  color: $brand-color;
-  border-left: 4px solid $brand-color-secondary;
+  color: $brand-color-tertiary;
+  border-left: 4px solid $brand-color-tertiary;
   padding-left: calc(#{$spacing-unit} / 2);
   @include relative-font-size(1.125);
   letter-spacing: -1px;

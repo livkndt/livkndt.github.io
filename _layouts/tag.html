@@ -6,8 +6,8 @@ layout: default
     <div class="wrapper">
         <h1>Tag: {{ page.tag }}</h1>
         <span>
-            <a href="{{ "/blog" | relative_url }}"><code class="highligher-rouge"><nobr>Blog</nobr></code></a> >
-            <code class="highligher-rouge"><nobr>{{ page.tag }}</nobr></code>
+            <a class="tag" href="{{ "/blog" | relative_url }}">Blog</a> >
+            <span class="tag">{{ page.tag }}</span>
         </span>
         <div>
             {%- for tag in site.tags -%}

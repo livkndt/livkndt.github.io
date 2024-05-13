@@ -128,6 +128,10 @@ a.site-title {
 
       margin-left: 20px;
     }
+
+    a::before {
+      display: none;
+    }
   }
 }
 
@@ -225,7 +229,7 @@ a.site-title {
 }
 
 .home-hero {
-  padding: calc(#{$spacing-unit} * 3) 0;
+  padding: calc(#{$spacing-unit} * 4) 0;
   background-color: $background-color;
 
   @include media-query($on-palm) {
@@ -389,6 +393,16 @@ a.site-title {
   }
 }
 
+.tag {
+  display: inline-block;
+  background-color: $brand-color;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 0 6px;
+  margin-bottom: 6px;
+  color: $background-color;
+}
+
 ul.tech, ul.post-categories {
   list-style-type: none;
   margin: calc(#{$spacing-unit} / 2) 0;
@@ -430,7 +444,7 @@ ul.tech, ul.post-categories {
 
 .position-hero {
   padding: $spacing-unit 0;
-  background-color: #fff;
+  background-color: $background-color;
 
   .company-logo {
     width: 42px;
