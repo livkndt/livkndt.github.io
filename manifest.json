@@ -20,10 +20,10 @@
     }
   ],
   "start_url": "/",
-  "background_color": "#dddddd",
+  "background_color": "#ebdbe4",
   "display": "standalone",
   "orientation": "portrait",
   "scope": "/",
-  "theme_color": "#bd7da8",
+  "theme_color": "#ebdbe4",
   "splash_pages": null
 }
