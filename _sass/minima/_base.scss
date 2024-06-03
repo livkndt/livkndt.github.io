@@ -114,9 +114,9 @@ hr {
  * Links
  */
 a {
-  color: $brand-color-tertiary;
+  color: $brand-color-secondary;
   position: relative;
-  text-decoration: none;
+  text-decoration: underline;
 
   &:hover {
     transition: color 1s;
@@ -125,7 +125,7 @@ a {
 
   &:not(:hover) {
     transition: color 1s;
-    color: $brand-color-tertiary;
+    color: $brand-color-secondary;
   }
 }
 
@@ -229,7 +229,7 @@ table {
   margin-bottom: $spacing-unit;
   width: 100%;
   text-align: $table-text-align;
-  color: lighten($text-color, 18%);
+  color: $brand-color-tertiary;
   border-collapse: collapse;
   border: 1px solid $grey-color-light;
 
@@ -250,6 +250,6 @@ table {
   }
 
   td {
-    border: 1px solid $grey-color-light;
+    border: 1px solid $brand-color;
   }
 }

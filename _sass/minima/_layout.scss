@@ -368,6 +368,7 @@ a.site-title {
 
     a {
       color: $brand-color;
+      text-decoration: none;
     }
   }
 
@@ -375,7 +376,7 @@ a.site-title {
     display: flex;
     justify-content: space-between;
     color: $brand-color-tertiary;
-    font-weight: 600;
+    font-family: $title-font-family;
 
     h4 {
       margin: 0;
@@ -420,6 +421,7 @@ ul.tech, ul.post-categories {
 
     a {
       color: $background-color;
+      text-decoration: none;
     }
   }
 }
@@ -439,7 +441,7 @@ ul.tech, ul.post-categories {
 
 .project-hero {
   padding: $spacing-unit 0;
-  background-color: #fff;
+  background-color: $background-color;
 }
 
 .position-hero {
@@ -450,6 +452,10 @@ ul.tech, ul.post-categories {
     width: 42px;
     height: 42px;
     margin-right: calc(#{$spacing-unit} / 2);
+  }
+
+  a {
+    text-decoration: none;
   }
 }
 
@@ -496,7 +502,7 @@ ul.tech, ul.post-categories {
 }
 
 .post-header {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit 0 0 0;
   background-color: $background-color;
 }
 

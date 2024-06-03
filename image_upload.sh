@@ -3,7 +3,7 @@
 # Requires ImageMagick to be installed
 # brew install imagemagick
 # Usage
-# aws-vault exec livkndt -- sh image_upload.sh ~/Desktop/resize/C6DF82D5-4AC7-4523-A8C3-2592495AEBD8.jpeg knit_hero 456 456 posts
+# sh image_upload.sh ~/Desktop/resize/C6DF82D5-4AC7-4523-A8C3-2592495AEBD8.jpeg knit_hero 456 456 posts
 #==============================================================================
 
 # Function to resize and save an image
@@ -39,7 +39,7 @@ resize_and_save() {
 
 # Check if at least four arguments were provided
 if [ $# -lt 2 ]; then
-    echo "Usage: $0 <image_path> <name> <max_width> <max_height> <folder>"
+    echo "Usage: $0 <image_path> <name> <max_height> <max_width> <folder>"
     exit 1
 fi
 
