@@ -25,13 +25,12 @@ what works for you.
 
 Look for opportunities to practice in small steps and find someone you trust to give feedback on your communication. 
 Some ideas:
-💡 Daily stand-ups — be clear & concise, convey the important info
-💡 Engineering knowledge-sharing sessions, brown bags, all-hands — share tech knowledge with technical people
-💡 Sprint demos — present your work and explain technical topics to potentially non-technical people
-💡 Code Pairing sessions — clearly explain your thought process whilst coding with another
-💡 Community sessions & events — opportunities to present in front of different, bigger audiences
-💡 Targeted communication training or meetups — does your company offer communication training, Toastmasters or similar? 
-meetup.com is also a great place to browse
+- 💡 Daily stand-ups — be clear & concise, convey the important info
+- 💡 Engineering knowledge-sharing sessions, brown bags, all-hands — share tech knowledge with technical people
+- 💡 Sprint demos — present your work and explain technical topics to potentially non-technical people
+- 💡 Code Pairing sessions — clearly explain your thought process whilst coding with another
+- 💡 Community sessions & events — opportunities to present in front of different, bigger audiences
+- 💡 Targeted communication training or meetups — does your company offer communication training, Toastmasters or similar? meetup.com is also a great place to browse
 
 I still find it hard & it’s likely a forever journey, but building these skills over the years helps me face the fear 
 and do it anyway!
