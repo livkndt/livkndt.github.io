@@ -97,7 +97,7 @@ The community has expressed considerable backlash against Terraform's shift to t
 ## Credits
 
 ### Thanks!
-Thanks to my colleagues Brian Myburgh, Jon Parish, Othman Alkhamra & Rahul Parkar, who gave me their time & invaluable insights into the experiences of our client engagements at 101 Ways. It was (as ever with tech) a divisive topic full of nuance-while the views expressed here are my personal take, I deeply appreciate all your thoughtful contributions. Thanks for the great discussions and alternative viewpoints!
+Thanks to my colleagues Brian Myburgh, Jon Parish, Othman Alkhamra & Rahul Parkar, who gave me their time & invaluable insights into the experiences of our client engagements at 101 Ways. It was (as ever with tech) a divisive topic full of nuance-while the views expressed here are my personal take, I deeply appreciate all your thoughtful contributions. Thanks for the great discussions and alternative viewpoints! Finally, a special thanks to Grant Smith for many discussions & proofreads ❤.
 
 ### Post Photo
 Post photo by <a href="https://unsplash.com/@cgower?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Christopher Gower</a> on <a href="https://unsplash.com/photos/a-macbook-with-lines-of-code-on-its-screen-on-a-busy-desk-m_HRfLhgABo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
