@@ -1,6 +1,7 @@
 <header class="site-header" role="banner">
 
   <div class="wrapper">
+    {% capture url_path %}{{site.url}}{{page.url}}{% endcapture %}
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -17,12 +18,14 @@
         </label>
 
         <div class="trigger">
-          <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
+          <a class="page-link{%- if page.url == "/" -%}{{ " active-link" }}{%- endif -%}" href="{{ "/" | relative_url }}">Home</a>
           {%- for my_page in site.data.navigation -%}
             {%- if my_page.title and my_page.url -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- assign my_page_url = my_page.url | append: "/" -%}
+              <a class="page-link{%- if my_page_url == page.url -%}{{ " active-link" }}{%- endif -%}" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {%- endif -%}
           {%- endfor -%}
+          {%- include social.html -%}
         </div>
       </nav>
     {%- endif -%}
